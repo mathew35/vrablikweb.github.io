@@ -1,0 +1,59 @@
+body {
+    overflow: visible;
+}
+
+div {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#header {
+    display: inline-flex;
+    color: blue;
+    background-color: aqua;
+    font-size: calc(20px + 0.1vw);
+    height: 30px;
+    width: calc(100vw - 36px);
+    padding: 10px;
+}
+
+#logo {
+    width: fit-content;
+}
+
+#navig {
+    overflow: visible;
+    flex-wrap: nowrap;
+}
+
+#about-me {
+    width: calc(100vw - 16px);
+    height: 80vh;
+}
+
+article {
+    width: 100%;
+    align-self: center;
+    height: fit-content;
+    text-align: left;
+    padding-left: 10%;
+}
+
+i {
+    margin-right: 15px;
+    min-width: fit-content;
+    padding-top: 2px;
+}
+
+a {
+    margin-right: 15px;
+    width: fit-content;
+    min-width: fit-content;
+}
+
+#WIP {
+    font-weight: bold;
+    color: red;
+    font-size: 90px;
+    z-index: 10;
+}
