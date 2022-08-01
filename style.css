@@ -2,18 +2,21 @@ body {
     overflow: visible;
 }
 
+html {
+    background-image: linear-gradient(to bottom left, #a6c5eb, #3587e1);
+    background-size: 110vw 200vh;
+    background-position: relative;
+}
+
 div {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
 }
 
 #header {
-    display: inline-flex;
-    color: blue;
-    background-color: aqua;
+    background-color: rgba(255, 255, 255, 0.2);
     font-size: calc(20px + 0.1vw);
     height: 30px;
-    width: calc(100vw - 36px);
     padding: 10px;
 }
 
@@ -27,16 +30,14 @@ div {
 }
 
 #about-me {
-    width: calc(100vw - 16px);
     height: 80vh;
 }
 
 article {
-    width: 100%;
     align-self: center;
     height: fit-content;
     text-align: left;
-    padding-left: 10%;
+    padding-inline: 5%;
 }
 
 i {
@@ -49,11 +50,75 @@ a {
     margin-right: 15px;
     width: fit-content;
     min-width: fit-content;
+    text-decoration-line: none;
+}
+
+a:visited {
+    color: #1e31a0;
+}
+
+a:hover {
+    color: #2c88ec;
+}
+
+#about-meA {
+    color: #1e31a0;
+    margin: 0;
+}
+
+#about-meA:visited {
+    color: #1e31a0;
+}
+
+#about-meA:hover {
+    color: lightblue;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#footer {
+    height: 30px;
+    padding: 8px;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #333;
+}
+
+#spacer {
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main {
+    padding: 10px;
+    padding-inline: 0px;
+}
+
+#my-projects {
+    display: inline;
+}
+
+hr {
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    width: 80%;
 }
 
 #WIP {
-    font-weight: bold;
+    z-index: 1000;
     color: red;
-    font-size: 90px;
-    z-index: 10;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    font-size: 40px;
 }

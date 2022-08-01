@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--    <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Matúš Vráblik">
+    <meta name="description" content="This page all the things I learn and do as a programmer">
+    <link rel="icon" href="VrablikWebIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Vrablik Website</title>
+
+
+</head>
+
+<body>
+    <div id="WIP">Page Under Construction!</div>
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="index.html"><img src="VrablikWebLogo.png" alt="VrablikWeb Logo"></a>
+            </div>
+            <div id="navig">
+                <a href="index.html">About me</a>
+                <a href="projects.html">My projects</a>
+                <a href="games.html">Games</a>
+                <a href="contactMe.html">Contact me</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="main-page">
+            <div>
+                <article id="HomeServer">
+                    <h1>Home Server</h1>
+                    <article class="Home_Server">
+                        <h3>Reason:</h3>
+                        <p>Truenas Scale HomeServer for photos,programing codes,etc. Maybe even video server, but this might not be possible with limited hardware of this machine.</p>
+                        <h3>Problems:</h3>
+                        <p>1. Unable to install directly from USB: At first, I tried install from USB on the machine itself. The very first problem arose with ACPI. My older hardware doesn't support ACPI so it had to be turned of in grub menu edit using
+                            2 switches "noacpi" and "acpi=off". Next problem was RAM. 1.5GB wasn't nearly enough to install. My solution was VM which allowed me to finally install Truenas.</p>
+                        <p>2. Low on RAM: After installing and setting up pool,datasheet(s) I wanted to access the files through app for easier upload and download as I wasn't the only one meant to use this server. Truenas catalog offered NextCloud for this
+                            purpose. After installing the app I ended wandering why it wasn't deploying and online. Reason being low RAM... TIME FOR UPGRADE</p>
+                        <h3>Upgrade:</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">Start specs</th>
+                                    <th scope="col">Upgraded
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>AM2+ motherboard 1x PCIe 2x PCI 2x SATA III 1x RJ-45 (100Mb/s)</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>AMD Athlon 64 X2 Dual Core 5200+ 2,7GHz</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>RAM 1,5GB</td>
+                                    <td>RAM 4GB</td>
+                                </tr>
+                                <tr>
+                                    <td>HDD 250GB</td>
+                                    <td>HDD 2x4TB Seagate Ironwolf</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>LAN card 1000Mb/s 1xRJ-45</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>After upgrading NextCloud finally deployed and is usable.</p>
+                        <h3>Online server:</h3>
+                        <p>Though I intended for the server to be online accesible, it is not possible due to few reasons.</p>
+                        <b>1. Public IP: My provider is using NAT and therefore no public IP for me unless I buy one for monthly subscription</b>
+                        <br>
+                        <b>2. Internet speed: DSL ... That's for short. High price and low speeds.</b>
+                        <p>As intended for personal use and one web about me and my projects, this doesn't compare to monthly price for this server. Therefore it stays offline and for home use only so far. As for my web it is here on github using github.io
+                            feature.
+                        </p>
+                        <h3>Shares:</h3>
+                        <p>SMB - large files,mainly programming and important files for my use only, to keep safe NextCloud - photos and family data</p>
+                    </article>
+                </article>
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <div id="contact-info">
+
+            </div>
+            <div id="contact-info">
+                this si contact info
+            </div>
+            <div id="social">
+                this is social icons
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

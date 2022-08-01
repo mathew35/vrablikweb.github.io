@@ -15,35 +15,63 @@
 </head>
 
 <body>
+    <div id="WIP">Page Under Construction!</div>
     <header>
         <div id="header">
             <div id="logo">
                 <a href="#"><img src="VrablikWebLogo.png" alt="VrablikWeb Logo"></a>
             </div>
-            <div id="WIP">
-                Page Under CONSTRUCTION!!!
-            </div>
             <div id="navig">
-                <a>About me</a>
-                <a>My projects</a>
-                <a>Games</a>
-                <a>Contact me</a>
+                <a href="#">About me</a>
+                <a href="projects.html">My projects</a>
+                <a href="games.html">Games</a>
+                <a href="contactMe.html">Contact me</a>
             </div>
         </div>
     </header>
     <main>
-        <div id="main-page">
-            <div id="about-me">
-                <article>
-                    Hello, I am Matúš(Matthew) Vráblik<br> student of computer science.
-                </article>
-                <img id="imgMe" src="VrablikWebLogo.png" alt="My photo">
-            </div>
+        <div id="about-me" class="main">
+            <article>
+                Hello, I am Matúš(Matthew) Vráblik<br> student of <a id="about-meA" href="https://www.fit.vut.cz/.en">Information Technology</a> at <a id="about-meA" href="http://www.vutbr.cz/en">Brno University of Technology</a>. I'm currently improving
+                my programming skills such as Python, Java, HTML/CSS, C++ to become a software developer.
+            </article>
+            <img id="imgMe" src="VrablikWebLogo.png" alt="My photo">
         </div>
-        <div>
+        <div id="spacer"></div>
+        <div id="my-projects" class="main">
+            <h1>My projects</h1>
+            <article>
+                <h1>My own Server</h1>
+                <p>&emsp;Home server running TrueNas Scale. This server is used as NAS but in the future will be used as database over SSH for this web as well.</p>
+                &emsp;<a href="projects.html#HomeServer">Read more!</a>
+            </article>
+            <hr>
+            <article id="WebPage">
+                <h1>First WebPage</h1>
+                <p>&emsp;You are browsing my first web right now! Do you see something wrong or something that doesn't feel right? Feel free to <a id="about-meA" href="#contact-info">contact me</a>!</p>
+                &emsp;<a href="projects.html#FirtWebPage">Read more!</a>
+            </article>
+            <br>
+        </div>
+        <div id="spacer"></div>
+        <div id="Games" class="main">
+            <h1>Games</h1>
 
         </div>
     </main>
+    <footer>
+        <div id="footer">
+            <div id="contact-info">
+
+            </div>
+            <div id="contact-info">
+                this si contact info
+            </div>
+            <div id="social">
+                this is social icons
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
