@@ -1,5 +1,7 @@
 :root {
     --txt-bg-color: rgba(255, 255, 255, 0.38);
+    --full-width: min(max(60vw, 40rem), 80rem);
+    --full-width-padding: max(10vw, calc(100vw / 2 - 40rem));
 }
 
 body {
@@ -37,7 +39,6 @@ div {
 
 #imgMe {
     padding: min(200px, 10vh);
-    /* width: max(20vw, 20rem); */
     height: min(60vh, 30rem);
 }
 
@@ -114,6 +115,10 @@ td {
 
 #my-projects {
     display: inline;
+}
+
+#FirstWebPage {
+    width: var(--full-width);
 }
 
 hr {
