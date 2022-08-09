@@ -117,10 +117,6 @@ td {
     display: inline;
 }
 
-#FirstWebPage {
-    width: var(--full-width);
-}
-
 hr {
     height: 3px;
     background-color: var(--txt-bg-color);
