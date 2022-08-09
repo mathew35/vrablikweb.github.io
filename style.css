@@ -1,10 +1,16 @@
+:root {
+    --txt-bg-color: rgba(255, 255, 255, 0.38);
+}
+
 body {
     overflow: visible;
+    width: min(max(60vw, 40rem), 80rem);
+    padding-inline: max(10vw, calc(100vw / 2 - 40rem));
 }
 
 html {
-    background-image: linear-gradient(to bottom left, #a6c5eb, #3587e1);
-    background-size: 110vw 200vh;
+    background-image: linear-gradient(to bottom left, #a6c5eb, #3587e1, #a6c5eb);
+    background-size: 5px 5px;
     background-position: relative;
 }
 
@@ -14,7 +20,7 @@ div {
 }
 
 #header {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--txt-bg-color);
     font-size: calc(20px + 0.1vw);
     height: 30px;
     padding: 10px;
@@ -29,8 +35,10 @@ div {
     flex-wrap: nowrap;
 }
 
-#about-me {
-    height: 80vh;
+#imgMe {
+    padding: min(200px, 10vh);
+    /* width: max(20vw, 20rem); */
+    height: min(60vh, 30rem);
 }
 
 article {
@@ -38,6 +46,7 @@ article {
     height: fit-content;
     text-align: left;
     padding-inline: 5%;
+    background-color: var(--txt-bg-color);
 }
 
 i {
@@ -75,7 +84,7 @@ a:hover {
 }
 
 footer {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--txt-bg-color);
 }
 
 #footer {
@@ -95,7 +104,7 @@ td {
 
 #spacer {
     height: 5px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--txt-bg-color));
 }
 
 .main {
@@ -109,7 +118,7 @@ td {
 
 hr {
     height: 3px;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: var(--txt-bg-color);
     border: 0;
     width: 80%;
 }
